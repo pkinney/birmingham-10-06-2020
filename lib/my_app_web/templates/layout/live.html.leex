@@ -1,0 +1,8 @@
+<main role="main" class="container">
+  <%= live_render(@socket, MyAppWeb.ToastLive, id: "toast") %>
+  <%= @inner_content %>
+</main>
+<footer class="container">
+  <hr/>
+  <%= live_redirect "Home", to: Routes.live_path(@socket, MyAppWeb.PageLive), class: "float-right" %>
+</footer>
